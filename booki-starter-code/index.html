@@ -16,17 +16,19 @@
 
 <body>
     <div class="main-container">
+
+        <!--Header-->
         <header>
             <div class="header">
                 <div class="logo">
-                <img src="Logo.png" alt="logo-site">
+                    <img src="Logo.png" alt="logo-site">
                 </div>
-                <div class="menus"
-                <nav>
-                    <a class="menus-hebergements" href="#hebergements-marseille">Hébergements</a>
-                    <a class="menus-activites" href="#activites-marseille">Activités</a> 
-                </nav>
-            </div>
+                <div class="menus">
+                    <nav class="navbar">
+                        <a class="menus-hebergements" href="#hebergements-marseille">Hébergements</a>
+                        <a class="menus-activites" href="#activites-marseille">Activités</a> 
+                    </nav>
+                </div>
             </div>
 
             
@@ -36,12 +38,18 @@
             <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             </main>
+
+            <!--Search bar-->
             <div class="user-recherche">
-                <form> 
-                    <input type="text" id="recherche" name="user_recherche" placeholder="Rechercher une ville" />
+                <img class="img-loc" src="./images/logo/icone.png" alt="icone-localiser">
+                <form>
+                    <input class="search-bar" type="search" id="recherche" name="user_recherche" placeholder="Marseille, France" />
                 </form>
+                    <button class="btn-search" type="submit" value="Rechercher">Rechercher</button>
+                    <button class="btn-search-mobil"> <i class="fa-solid fa-magnifying-glass" style="color:#ffff;"></i></button>
             </div>
 
+            <!--Hebergements et populaires-->
             <div class="hebergements-and-populaires">
 
                 <section class="hebergements">
@@ -117,7 +125,7 @@
 
             <div class="activites">
             <section class="activites-marseille">
-                <h2 id="activites-marseille" class="activites">Activités à Marseille </h2>
+                <h2 id="activites-marseille" class="section-title">Activités à Marseille </h2>
             </section>
         </div>
         </main>
