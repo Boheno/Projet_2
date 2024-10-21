@@ -16,6 +16,8 @@
 body {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    max-width: 1440px;
 }
 
 /*Header*/
@@ -25,6 +27,9 @@ body {
     justify-content: space-between;
     margin:10px;
     padding: 15px;
+}
+.logo img{
+    width:100px;
 }
 .menus-hebergements{
     margin:15px;
@@ -53,7 +58,7 @@ body {
     display:flex;
     align-items: flex-start;
     justify-content:flex-start;
-    margin-top:50px;
+    margin-top:30px;
 }
 .img-loc{
     width: 20px;
@@ -76,7 +81,7 @@ body {
 .btn-search{
     width: 150px;
     height:50px;
-    margin-left: -10px;
+    /* margin-left: -2px; */
     background-color: #0065FC;
     color: #EFEFEF;
     border: 1px solid #EFEFEF;
@@ -117,8 +122,8 @@ body {
     /* justify-content: flex-start;
     text-align: center; */
     flex-direction: row;
-    margin:10px;
-    padding: 30px;
+    margin-top:5px;
+    padding-top: 20px;
 
 }
 .btn-filtres{
@@ -136,7 +141,7 @@ body {
     margin-left: 20px;
     background-color: white;
     border: 1px solid #EFEFEF;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     font-weight: bold;
 }
 .btn-filtres-1:hover{
@@ -154,7 +159,7 @@ body {
     margin-left: 20px;
     background-color: white;
     border: 1px solid #EFEFEF;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     font-weight: bold;
 }
 .btn-filtres-2:hover{
@@ -171,7 +176,7 @@ body {
     margin-left: 20px;
     background-color: white;
     border: 1px solid #EFEFEF;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     font-weight: bold;
 }
 .btn-filtres-3:hover{
@@ -188,13 +193,30 @@ body {
     margin-left: 20px;
     background-color: white;
     border: 1px solid #EFEFEF;
-    border-radius: 25px 25px 25px 25px;
+    border-radius: 25px;
     font-weight: bold;
 }
 .btn-filtres-4:hover{
     background-color: #D6EAF8;
     cursor: pointer;
 }
+/*infos*/
+.infos{
+    display:flex;
+    align-items: flex-start;
+}
+.logo-info{
+    width: 5px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 5px;
+    border: 1px solid grey;
+    border-radius: 25px;
+}
+
+/* Cards */
 
 .main-container {
     width: 100%;
@@ -259,6 +281,57 @@ a {
     width: 65%;
     margin-top:25px;
 }
+.hebergements-cards .card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 210px;
+    height: 200px;
+}
+.hebergements-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 33px;
+    margin-bottom: 20px;
+    
+}
+
+.hebergements-cards img{
+    width:100%;
+    height: 105px;
+    border-radius: 20px 20px 0 0;
+    /* object-fit: fill; */
+    
+}
+.hebergements-cards .card-title{
+    display: flex;
+    margin-left: 10px;
+    margin-top: 0px; 
+    margin-bottom: 0px;
+}
+.hebergements-cards .card-subtitle{
+    display:flex;
+    margin-left: 10px;
+    margin-top: 5px; 
+    margin-bottom: 0px;
+    /* font-size: 13px; */
+}
+.hebergements-cards .card-rating{
+    display:flex;
+    margin-left: 10px;
+    margin-top: 15px; 
+    margin-bottom: 0px;
+    width: 5px;
+}
+.afficher{
+    margin-left: 10px;
+    margin-top: 30px;
+}
 
 /****** Populaires ***********/
 .populaires {
@@ -309,15 +382,48 @@ a {
 /*Activités à Marseille*/
 
 .activites-marseille {
-    display: flex;
-    background-color: var(--main-bg-color);
-    border-radius: 20px;
-    padding: 30px;
-    margin-top: 25px;
+    /* display:flex; */
+    width: 100%;
+    margin-top:25px;
     box-sizing: border-box;
+}
+.activites-cards{
+    display:flex;
+    flex-wrap: wrap;
+    width:100%;
     
+    /* margin:20px; */
+}
+
+.activites-cards .card-content{
+    width: 270px;
+    height: 60px;
+}
+.activites-cards .card{
+    display:flex;
+    flex-direction: column;
+    width:260px;
+    height:400px;
+    margin:10px;
+    padding:0;
+}
+.activites-cards img{
+    width:100%;
+    height:85%;
+    border-radius: 20px 20px 0 0;
     
-    
+}
+.activites-cards .card-title{
+    display:flex;
+    margin:20px;
+}
+
+.footer-page{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: var(--main-bg-color);
+    margin:20px;
+
 }
 
 
