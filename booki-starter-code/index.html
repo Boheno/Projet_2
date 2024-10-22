@@ -25,8 +25,8 @@
                 </div>
                 <div class="menus">
                     <nav class="navbar">
-                        <a class="menus-hebergements" href="#hebergements-marseille">Hébergements</a>
-                        <a class="menus-activites" href="#activites-marseille">Activités</a> 
+                        <a class="menus-navbar" href="#hebergements-marseille">Hébergements</a>
+                        <a class="menus-navbar" href="#activites-marseille">Activités</a> 
                     </nav>
                 </div>
             </div>
@@ -45,18 +45,18 @@
                 <form>
                     <input class="search-bar" type="search" id="recherche" name="user_recherche" placeholder="Marseille, France"/>
                 </form>
-                    <button class="btn-search" type="submit" value="Rechercher">Rechercher</button>
-                    <button class="btn-search-mobil" type="submit"><i class="fa-solid fa-magnifying-glass" style="color:#ffff;"></i></button>
+                <button class="btn-search" type="submit" value="Rechercher">Rechercher</button>
+                <button class="btn-search-mobil" type="submit"><i class="fa-solid fa-magnifying-glass" style="color:#ffff;"></i></button>
             </div>
 
             <!--Filtres-->
             <div class="filtres-user">
                 <h3 class="filtres-title">Filtres</h3>
-                <div class="btn-filtres">
-                    <button class="btn-filtres-1" type="submit"><i class="fa-solid fa-money-bill-wave" style="color:#0065FC;"></i>Economique</button>
-                    <button class="btn-filtres-2" type="submit"><i class="fa-solid fa-person" style="color:#0065FC;"></i>Familiale</button>
-                    <button class="btn-filtres-3" type="submit"><i class="fa-solid fa-heart" style="color:#0065FC;"></i>Romantique</button>
-                    <button class="btn-filtres-4" type="submit"><i class="fa-solid fa-fire" style="color:#0065FC;"></i>Nos pépites</button>
+                <div class="filtres">
+                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-money-bill-wave" style="color:#0065FC;"></i>Economique</button>
+                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-person" style="color:#0065FC;"></i>Familiale</button>
+                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-heart" style="color:#0065FC;"></i>Romantique</button>
+                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-fire" style="color:#0065FC;"></i>Nos pépites</button>
 
                 </div>
             </div>
@@ -325,13 +325,41 @@
         
  <footer>
     <div class="footer-page">
+        <div class="footer-column">
         <div class="footer-title">
-            <h3 class="card-title">À propos</h3>
+            <h3 class="card-title footer-subtitle" >À propos</h3>
+        </div>
+        <div class="footer-txt">
+            <ul class="footer-list">
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales</li>
+                <li>Données et confidentialité</li>
+            </ul>
+        </div>
+            </div>
+            <div class="footer-column">
+            <div class="footer-title">
+                <h3 class="card-title footer-subtitle">Nos hébergements</h3>
+            </div>
             <div class="footer-txt">
-
+                <ul class="footer-list">
+                    <li>Charte qualité</li>
+                    <li>Proposer votre hôtel</li>
+                </ul>
             </div>
         </div>
- </div>
+        <div class="footer-column">
+            <div class="footer-title">
+                <h3 class="card-title footer-subtitle">Assistance</h3>
+            </div>
+            <div class="footer-txt">
+                <ul class="footer-list">
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
+            </div> 
+        </div>     
+    </div>
 </footer>
 
 </body>
