@@ -41,11 +41,12 @@ body {
     padding: 25px 15px 15px 15px;
     width: 15px;
 }
+@media (min-width:768px){ 
 .navbar :hover{
     border-top: 2px #0065FC solid ;
     color:#0065FC;
 }
-
+}
 /*Search-bar*/
 
 .user-recherche{
@@ -61,6 +62,7 @@ body {
     border-radius: 10px 0px 0px 10px;
     background-color: #DCDCDC;
 }
+
 .search-bar{
     width:350px;
     height:50px;
@@ -71,6 +73,7 @@ body {
     font-size: 25px;
     text-align: center;
 }
+@media (min-width:768px){ 
 .btn-search{
     width: 150px;
     height:50px;
@@ -85,7 +88,7 @@ body {
 .btn-search-mobil{
     display:none
 }
-
+}
 /*Filtres*/
 .filtres-user{
     display:flex;
@@ -154,7 +157,6 @@ a {
 }
 
 .section-title {
-    margin: 30;
     font-size: 22px;
 }
 
@@ -184,12 +186,11 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    /* flex-wrap: nowrap; */
     justify-content: space-between;
     
 }
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
+    /* background-color: var(--main-bg-color); */
     border-radius: 20px;
     padding: 30px;
     margin:5px;
@@ -401,12 +402,12 @@ a {
         padding: 25px 15px 15px 15px;
         width: 15px;
     }
-    .navbar :hover{
+    /* .navbar :hover{
         border-top: 2px #0065FC solid ;
         color:#0065FC;
-    }
+    } */
     /* Search bar */
-    .btn-search{
+    /* .btn-search{
         width: 150px;
         height:50px;
         background-color: #0065FC;
@@ -419,7 +420,7 @@ a {
     }
     .btn-search-mobil{
         display:none
-    }
+    } */
     /* Filtres */
     .filtres-user{
         display:flex;
@@ -469,7 +470,6 @@ a {
     }
     
     .section-title {
-        margin: 30;
         font-size: 22px;
     }
     
@@ -646,20 +646,22 @@ a {
         justify-content: center;
     }
     .menus{
-        width: 320px;
+        width: 400px;
+        justify-content: center;
     }
     .navbar{
         display:flex;
         justify-content: space-between;
-        padding: 5px 50px 5px 0;
+        padding: 5px 5px 5px 0;
         margin:0 10px 0 0;
-        width: 320px;
+        width: 350px;
     }
     .menus-navbar{
-        margin:15px 15px 0 0;
-        padding: 15px 15px 5px 0;
-        justify-content: space-between;
+        margin: 0;
+        padding:  0;
+        justify-content: center;
         display:flex;
+        width:100%;
     }
     .navbar :hover{
         border-bottom: 2px #0065FC solid ;
@@ -693,18 +695,22 @@ a {
     }
     /* Btn filtre */
     .filtres-user{
-        flex-direction: row;
+        display:flex;
+        flex-direction: column;
         margin-top:0px;
         padding-top: 0px;
+        width:400px;
     }
     .filtres-title{
         margin:20px 0 10px 0;
+        height: 20px;
     }
     .filtres{
         display:flex;
-        flex-direction: row;
         flex-wrap: wrap;
+       
         width:400px;
+        padding-right:100px;
     }
     .btn-filtre{
         display: flex;
@@ -747,7 +753,7 @@ a {
     }
     
     .section-title {
-        margin: 10;
+        margin: 10px;
         font-size: 18px;
     }
     .card {
@@ -826,7 +832,7 @@ a {
     }
     .hebergements-cards .card-title{
         display: flex;
-        margin-left: 0 10px 0 10px;
+        margin: 0 10px 0 10px;
         /* margin-top: 0px; 
         margin-bottom: 0px; */
     }
