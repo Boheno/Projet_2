@@ -15,15 +15,25 @@
 </head>
 
  <!--Header-->
- <header>
-    <div class="header">
+<header>
+    <div class="header"> 
         <div class="logo">
             <img src="Logo.png" alt="logo-site">
         </div>
         <div class="menus">
+            
             <nav class="navbar">
+                <div class="divBoutonNavbar">
+                    <hr class="barre-navbar-up">
                     <a class="menus-navbar" href="#hebergements-marseille">Hébergements</a>
+                    <hr class="barre-navbar-down">
+                </div>
+                <!-- <hr class="barre-navbar"> -->
+                <div class="divBoutonNavbar">
+                    <hr class="barre-navbar-up">
                     <a class="menus-navbar" href="#activites-marseille">Activités</a>
+                    <hr class="barre-navbar-down">
+                </div>
             </nav>
         </div>
     </div>
@@ -31,13 +41,11 @@
 
 <body>
     <div class="main-container">
-
         <main>
             <div class="title-page">
             <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre-ville ou en pleine nature</p>
             </div>
-        
 
             <!--Search bar-->
             <div class="user-recherche">
@@ -46,28 +54,26 @@
                     <input class="search-bar" type="search" id="recherche" name="user_recherche" placeholder="Marseille, France">
                 </form>
                 <button class="btn-search" type="submit" value="Rechercher">Rechercher</button>
-                <button class="btn-search-mobil" type="submit"><i class="fa-solid fa-magnifying-glass" style="color:#ffff;"></i></button>
+                <button class="btn-search-mobil" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
 
             <!--Filtres-->
             <div class="filtres-user">
                 <h3 class="filtres-title">Filtres</h3>
                 <div class="filtres">
-                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-money-bill-wave" style="color:#0065FC;"></i>Economique</button>
-                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-person" style="color:#0065FC;"></i>Familiale</button>
-                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-heart" style="color:#0065FC;"></i>Romantique</button>
-                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-fire" style="color:#0065FC;"></i>Nos pépites</button>
+                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-money-bill-wave filtreIcon"></i>Economique</button>
+                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-person filtreIcon"></i>Familiale</button>
+                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-heart filtreIcon"></i>Romantique</button>
+                    <button class="btn-filtre" type="submit"><i class="fa-solid fa-fire filtreIcon"></i>Nos pépites</button>
 
                 </div>
             </div>
-
             <div class="infos">
-                <p class="logo-info"><i class="fa-solid fa-info" style="color: #0065FC;"></i></p>
+                <p class="logo-info"><i class="fa-solid fa-info"></i></p>
                 <p class="info-txt"> Plus de 500 hébergements sont disponibles dans cette ville</p>
             </div>
 
             <!--Hebergements and populaires-->
-
             <div class="hebergements-and-populaires">
             <!--Hébergements-->
                 <section class="hebergements">
@@ -191,8 +197,6 @@
                     </div>
                     <h3 class="afficher">Afficher plus</h3>
                 </section>
-                
-
             <!--Populaires-->
                 <section class="populaires">
                     <div class="populaires-title">
@@ -293,7 +297,7 @@
                     </a>
                     
                     
-                        <a href="#">
+                    <a href="#">
                             <article class="card">
                             <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du paysage des Calanques">
                             <div class="card-content">
@@ -302,10 +306,10 @@
                                 </div>
                             </div>
                             </article>
-                        </a>
+                    </a>
                        
                        
-                        <a href="#">
+                    <a href="#">
                             <article class="card">
                             <img src="./images/activites/florian-wehde.jpg" alt="Image de cathédrale">
                             <div class="card-content">
@@ -314,9 +318,9 @@
                                 </div>
                             </div>
                             </article>
-                        </a>
+                    </a>
                        
-                    </div>
+                </div>
             </section>
         </main>
     </div>

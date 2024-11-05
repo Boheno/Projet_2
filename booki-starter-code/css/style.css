@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     max-width: 1440px;
     width:100%;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0px;
@@ -31,10 +32,12 @@ body {
     justify-content: space-between;
     width:100%;
     padding-left: 7px;
+    padding-top: 3px;
+    
 }
 .logo img{
     width:100px;
-    margin-top:10px;
+    padding-top:15px;
     padding-left: 22px;
 }
 /* Titre */
@@ -100,6 +103,9 @@ body {
     background-color: #D6EAF8;
     cursor: pointer;
 }
+.filtreIcon{
+    color:#0065FC;
+}
 
 /*infos*/
 .infos{
@@ -116,6 +122,9 @@ body {
 }
 .info-txt{
     padding:5px;
+}
+.fa-info{
+    color: #0065FC;
 }
 
 /* Cards */
@@ -361,18 +370,37 @@ footer{
 @media(min-width:768px){ 
 
     .menus{
-        margin:10px;
-        padding: 10px;
+        margin-right:20px;
+        padding-top: 0px;
+        /* width:25%; */
+        
     }
     .menus-navbar{
-        margin:10px;
-        padding: 25px 15px 15px 15px;
-        width: 15px;
+        /* margin:10px; */
+        padding: 0px 15px 15px 15px;
+        /* width: 15px; */
     }
-    .navbar :hover{
-        border-top: 2px #0065FC solid ;
-        color:#0065FC;
+
+    .divBoutonNavbar:hover > .barre-navbar-up {
+        color: var(--main-color);
     }
+
+    .divBoutonNavbar:hover {
+        color: var(--main-color);
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    .barre-navbar-up, .barre-navbar-down{
+        margin:0px 0px 20px 0px;
+        padding-top: 0px;
+        width:100%;
+        color: transparent;
+    }
+
     .hebergements-cards{
         display:flex;
         flex-wrap: wrap;
@@ -440,7 +468,6 @@ footer{
     }
     .menus-navbar{
         margin:10px 0px 10px 20px;
-        padding: auto;
         width: 15px;
         justify-content: space-between;
     }
@@ -516,7 +543,7 @@ footer{
     .neutral-star {
         color: var(--main-bg-color)
     }
-
+ 
     /* Hebergements */
     .hebergements {
         width:100%;
@@ -720,18 +747,45 @@ footer{
         justify-content: space-between;
         width: 100%;
         padding:0px;
+        margin-top: 10px;
     }
     .menus-navbar{
-        margin: 0;
-        padding:10px;
+        margin: 0px;
+        padding:0px;
         justify-content:space-around;
         display:flex;
         width:100%;
     }
-    .navbar :hover{
-        border-bottom: 2px #0065FC solid ;
-        color:#0065FC;
+
+    .divBoutonNavbar:hover > .barre-navbar-down {
+        color: var(--main-color);
     }
+
+    .divBoutonNavbar:hover {
+        color: var(--main-color);
+    }
+
+    .divBoutonNavbar {
+        /* text-align: center; */
+        justify-content: center;
+        padding-top:10px;
+        width:100%;
+    }
+   
+    .barre-navbar-up ,.barre-navbar-down {
+        margin:0px 0px 0px 0px;
+        padding-top: 0px;
+        width:100%;
+        color: transparent;
+        box-sizing: border-box;
+    }
+    .barre-navbar-down {
+        margin:10px 0px 20px 0px;
+        padding-top: 0px;
+        width:100%;
+        color: transparent;
+    }
+
     
     .title{
         font-size: 21px;
@@ -758,6 +812,9 @@ footer{
         background-color:#0065FC;
         cursor: pointer;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+    .fa-magnifying-glass{
+        color:#ffff;
     }
     .btn-search{
         display:none
@@ -809,6 +866,9 @@ footer{
         background-color: #D6EAF8;
         cursor: pointer;
     }
+    .filtreIcon{
+        color:#0065FC;
+    }
     /* infos */
     .infos{
         width:97%;
@@ -827,6 +887,9 @@ footer{
         border: 1px solid grey;
         border-radius: 25px;
         }
+    .fa-info{
+        color: #0065FC;
+    }
     /* Cards */
     .main-container {
         width: 100%;
@@ -903,11 +966,12 @@ footer{
         box-sizing: border-box;
         margin-top:0px;
         margin-left: 10px;
+        padding-right: 7px;
         width: 100%;
     }
     .hebergements-cards{
         display:flex;
-        padding-right:20px;
+        padding-right:10px;
         justify-content: space-around;
         flex-direction: column;
         margin-top:10px;
@@ -989,6 +1053,7 @@ footer{
     .populaires-cards .card-content {
         width: 67%;
         padding-left: 15px;
+        padding-right: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
