@@ -32,11 +32,11 @@ body {
     justify-content: space-between;
     width:100%;
     padding-left: 7px;
-    padding-top: 3px;
+    padding-top: 0px;
     
 }
 .logo img{
-    width:100px;
+    width:90px;
     padding-top:15px;
     padding-left: 22px;
 }
@@ -131,6 +131,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
+    margin-top: 20px;
     padding-left:2%;
     padding-right: 2%;
     box-sizing: border-box;
@@ -372,13 +373,9 @@ footer{
     .menus{
         margin-right:20px;
         padding-top: 0px;
-        /* width:25%; */
-        
     }
     .menus-navbar{
-        /* margin:10px; */
         padding: 0px 15px 15px 15px;
-        /* width: 15px; */
     }
 
     .divBoutonNavbar:hover > .barre-navbar-up {
@@ -722,7 +719,7 @@ footer{
         flex-direction: column;
         width:100%;
         padding-left:0px;
-        padding-bottom:10px;
+        padding-bottom:0px;
        
     }
     .logo{
@@ -760,7 +757,6 @@ footer{
     .divBoutonNavbar:hover > .barre-navbar-down {
         color: var(--main-color);
     }
-
     .divBoutonNavbar:hover {
         color: var(--main-color);
     }
@@ -893,6 +889,7 @@ footer{
     /* Cards */
     .main-container {
         width: 100%;
+        margin-top: 0px;
         max-width: 768px;
         padding: 0px;
         box-sizing: border-box;
