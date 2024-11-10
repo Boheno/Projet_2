@@ -395,14 +395,14 @@ footer{
         margin:0px 0px 20px 0px;
         padding-top: 0px;
         width:100%;
-        border: none; /* Suppression de toute bordure existante */
+        border: none;
         border-top: 2px solid transparent;
     }
     .barre-navbar-down{
         margin:0px 0px 20px 0px;
         padding-top: 0px;
         width:100%;
-        border: none; /* Suppression de toute bordure existante */
+        border: none; 
         border-top: 2px solid transparent;
     }
 
@@ -418,10 +418,10 @@ footer{
         box-sizing: border-box;
     }
     .hebergements-and-populaires section {
-    border-radius: 20px;
-    padding: 30px;
-    margin:5px;
-    box-sizing: border-box;
+        border-radius: 20px;
+        padding: 30px;
+        margin:5px;
+        box-sizing: border-box;
     }
 }
 /* Bouton recherche */
@@ -511,7 +511,6 @@ footer{
     /* Cards */
     .main-container {
         width: 100%;
-        /* max-width: 1024px; */
         padding:0 5% 5% 5%;
         box-sizing: border-box;
     } 
@@ -780,7 +779,7 @@ footer{
         margin:10px 0px 20px 0px;
         padding-top: 0px;
         width:100%;
-        border: none; /* Suppression de toute bordure existante */
+        border: none;
         border-top: 2px solid transparent;
         box-sizing: border-box;
     }
@@ -952,7 +951,6 @@ footer{
         width:100%;
         margin-top:10px;
         padding:10px;
-        /* padding: 0px; */
         box-sizing: border-box;
         background-color: white;
     }
@@ -1024,7 +1022,6 @@ footer{
         align-items: center;
         box-sizing: border-box;
         padding:10px;
-        /* width:100%; */
         height: 50px;
     }
     .populaires-cards {
