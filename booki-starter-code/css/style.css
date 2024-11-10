@@ -379,7 +379,7 @@ footer{
     }
 
     .divBoutonNavbar:hover > .barre-navbar-up {
-        color: var(--main-color);
+        border-top: 2px var(--main-color) solid;
     }
 
     .divBoutonNavbar:hover {
@@ -391,11 +391,19 @@ footer{
         justify-content: space-between;
     }
    
-    .barre-navbar-up, .barre-navbar-down{
+    .barre-navbar-up{
         margin:0px 0px 20px 0px;
         padding-top: 0px;
         width:100%;
-        color: transparent;
+        border: none; /* Suppression de toute bordure existante */
+        border-top: 2px solid transparent;
+    }
+    .barre-navbar-down{
+        margin:0px 0px 20px 0px;
+        padding-top: 0px;
+        width:100%;
+        border: none; /* Suppression de toute bordure existante */
+        border-top: 2px solid transparent;
     }
 
     .hebergements-cards{
@@ -405,13 +413,11 @@ footer{
         flex-direction: row;
         margin: 0;
         padding:0;
-        /* margin-bottom: 20px; */
         width:100%;
         height:500px;
         box-sizing: border-box;
     }
     .hebergements-and-populaires section {
-    /* background-color: var(--main-bg-color); */
     border-radius: 20px;
     padding: 30px;
     margin:5px;
@@ -741,8 +747,6 @@ footer{
         width: 100%;
         justify-content: space-between;
         margin:auto;
-       
-        /* padding-top:10px; */
     }
     .navbar{
         display:flex;
@@ -760,33 +764,26 @@ footer{
     }
 
     .divBoutonNavbar:hover > .barre-navbar-down {
-        color: var(--main-color);
+        border-top: 2px var(--main-color) solid;
     }
     .divBoutonNavbar:hover {
         color: var(--main-color);
     }
 
     .divBoutonNavbar {
-        /* text-align: center; */
         justify-content: center;
         padding-top:10px;
         width:100%;
     }
    
     .barre-navbar-up ,.barre-navbar-down {
-        margin:0px 0px 0px 0px;
-        padding-top: 0px;
-        width:100%;
-        color: transparent;
-        box-sizing: border-box;
-    }
-    .barre-navbar-down {
         margin:10px 0px 20px 0px;
         padding-top: 0px;
         width:100%;
-        color: transparent;
+        border: none; /* Suppression de toute bordure existante */
+        border-top: 2px solid transparent;
+        box-sizing: border-box;
     }
-
     
     .title{
         font-size: 21px;
