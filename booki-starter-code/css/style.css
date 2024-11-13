@@ -24,7 +24,9 @@ body {
     margin-right: auto;
     margin-bottom: 0px;
 }
-
+h2{
+    font-weight: normal;
+}
 /*Header*/
 .header{
     display:flex;
@@ -359,7 +361,6 @@ footer{
 .footer-txt{
     padding-top: 0px;
 }
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
